@@ -15,6 +15,8 @@ const playerPlay = function() {
 // the while loop alows the player to input the correct words required for the game
     while (true) {
         userInput = prompt('Enter your choice: Rock, Paper or Scissors');
+
+        // this function does wonders but needs work 
         if (userInput === null || userInput === '') {
             continue; // this will skip if there is no user input or null value and allow for the loop to let the user enter the required values
                     // it works but it still doesnt allow after a page refresh and a couple trys
