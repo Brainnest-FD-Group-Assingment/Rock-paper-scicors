@@ -37,33 +37,45 @@ function playRound(playerSelection, computerSelection) {
   } else {
     return 'Error. Please make sure your spelling is correct'
   }
-  
+}
+
+let computerScore = 0;
+let playerScore = 0;
+let roundNumber = 1;
+
+function addScoring(round) {
+  if(round.includes('You win')) {
+    playerScore += 1
+  } else if(round.includes('You lose')) {
+    computerScore += 1
+  } 
+  console.log(playerScore, computerScore)
+}
+
+function handleRound(round) {
+  console.log(round)
+  if(round.includes('Error')) {
+    roundNumber += 0;
+  } else {
+    roundNumber += 1
+  }
 }
 
 function playGame() {
-  let roundNumber = 1;
-  let computerScore = 0;
-  let playerScore = 0;
   for(let i = 0; i < 5; i++) {
     console.log(`Round ${roundNumber}`)
     const computerSelection = computerPlay();
     const playerSelection = prompt('Rock, paper or scissors?')
     let round = playRound(playerSelection, computerSelection);
-    console.log(round)
-    roundNumber += 1;
-    if(round.includes('You win')) {
-      playerScore += 1
-    } else if(round.includes('You lose')) {
-      computerScore += 1
-    } else {
-      continue
-    }
-    console.log(playerScore, computerScore)
+    
+    handleRound(round)
+    addScoring(round)
   }
+
   if(playerScore > computerScore) {
-    return `You win with ${playerScore} points!`
+    return `You win with ${playerScore} points! The computer only got ${computerScore} points.`
   } else if(computerScore > playerScore) {
-    return `You lose! You only got ${playerScore} points!`
+    return `You lose! You only got ${playerScore} points and the computer got ${computerScore} points!`
   }
 }
 
