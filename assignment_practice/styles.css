@@ -1,0 +1,115 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  background-color: lightskyblue;
+}
+
+.header {
+  width: 100%;
+  height: 10em;
+  border-radius: 10px;
+  background-color: lightskyblue;
+  margin: auto;
+  padding: 2em 0
+}
+
+.header h1 {
+  font-size: 3em;
+  font-weight: 2em;
+  letter-spacing: 0.2em;
+}
+
+.header p {
+  font-size: 1.5em;
+}
+
+main {
+  width: 60%;
+  margin: 2em auto;
+  border-radius: 10px;
+  background-color: seashell;
+  padding-bottom: 3em;
+}
+
+#round-number {
+  letter-spacing: 0.1em;
+  border-bottom: 4px solid darkblue;
+  width: 8em;
+  margin: auto;
+  padding: 1em 0
+}
+
+.btn{
+  margin: 3em 1em;
+  width: 8em;
+  height: 4em;
+  border-radius: 10px;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+}
+
+#rock {
+  background-color: rgb(255, 242, 0);
+}
+
+/* #rock:hover {
+  height: 5em;
+  width: 9em
+} */
+
+#paper {
+  background-color: rgb(68, 185, 68);
+}
+
+#scissors {
+  background-color: rgb(50, 135, 255);
+}
+
+#play {
+  background-color: orangered;
+  width: 10em;
+  height: 4em;
+  border: none;
+  border-radius: 10px;
+  font-weight: bolder;
+}
+
+.scores-section h3 {
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
+  border-bottom: 4px solid darkblue;
+  width: 8em;
+  margin: auto;
+  padding: 1em 0
+}
+
+.scores-table {
+  margin: 2em auto;
+  padding: 1em;
+  border: 3px solid darkblue;
+}
+
+.scores-table th{
+  padding: 0.5em 1em;
+}
+
+#player-choice {
+  font-size: 2em;
+}
+
+#computer-choice {
+  font-size: 2em;
+}
+
+#winner-of-round {
+  font-size: 2em;
+}
+
+#overall-winner {
+  font-size: 2em;
+  color:blue;
+  border-style: double;
+  border: 3px darkblue
+}
+

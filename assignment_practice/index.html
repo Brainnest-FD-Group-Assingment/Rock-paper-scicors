@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <!-- <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet"> -->
+  <script src="https://kit.fontawesome.com/4b42119513.js" crossorigin="anonymous"></script>
+  <script src="./script.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <h1>Lets Play!</h1>
+    <p>First one with 5 points wins!</p>
+  </header>
+  <main>
+    <h2 id="round-number">Round 1</h2>
+    <h3>Choose your weapon:</h3>
+    <section class="buttons">
+      <button class="btn" id="rock" value="rock">Rock</button>
+      <button class="btn" id="paper" value="paper">Paper</button>
+      <button class="btn" id="scissors" value="scissors">Scissors</button>
+      <div>
+        <button id="play">Go!</button>
+      </div>
+    </section>
+    <section class="statements">
+      <p id="player-choice"></p>
+      <p id="computer-choice"></p>
+      <p id="winner-of-round"></p>
+      <p id="overall-winner"></p>
+    </section>
+    <section class="scores-section">
+      <h3>Scores</h3>
+      <table class="scores-table">
+        <tr>
+          <th>Rounds</th>
+          <th>Player 1</th>
+          <th>Computer</th>
+        </tr>
+        <tr>
+          <td id="rounds-total">1</td>
+          <td class="score" id="player-score-accumulated">0</td>
+          <td class="score" id="computer-score-accumulated">0</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
+</body>
+
+</html>
