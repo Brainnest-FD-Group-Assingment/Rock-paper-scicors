@@ -1,13 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="game.js" defer></script>
-    <title>Game</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <script src="./script.js" defer></script>
+  <title>Document</title>
 </head>
+
 <body>
-    
+  <header class="header">
+    <h1 class="main-header">Lets Play!</h1>
+    <p class="title-desc">First one with 5 points wins!</p>
+  </header>
+  <main class="main-game">
+    <h2 id="round-number">Round 1</h2>
+    <h3>Choose your weapon:</h3>
+    <section class="buttons seletions">
+      <button id="rock" class="btn icon-item" value='rock'>
+        <i class="icon-game fa-regular fa-hand-back-fist" data-icon="rock"></i>
+      </button>
+      <button id="paper" class="btn icon-item" value="paper">
+        <i class=" icon-game fa-regular fa-hand" data-icon='paper'></i>
+      </button>
+      <button id="scissors" class="btn icon-item" value="scissors">
+        <i class=" icon-game fa-regular fa-hand-scissors" data-icon="scissors"></i>
+      </button>
+    </section>
+    <div>
+      <button id="play">Go!</button>
+    </div>
+    <section class="statements">
+      <p id="player-choice"></p>
+      <p id="computer-choice"></p>
+      <p id="winner-of-round"></p>
+      <p id="overall-winner"></p>
+    </section>
+    <section class="scores-section">
+      <h3>Scores</h3>
+      <table class="scores-table">
+        <tr class="table-head">
+          <th>Rounds</th>
+          <th>Player 1</th>
+          <th>Computer</th>
+        </tr>
+        <tr>
+          <td id="rounds-total">1</td>
+          <td class="score" id="player-score-accumulated">0</td>
+          <td class="score" id="computer-score-accumulated">0</td>
+        </tr>
+      </table>
+    </section>
+  </main>
+
 </body>
+
 </html>
